@@ -127,12 +127,15 @@ const Page = () => {
               {
                 type: 'email',
                 message: '请输入正确的邮箱地址!',
-                pattern: 'w*@swinfo.com.cn'
               },
               {
                 required: true,
                 message: '请输入邮箱地址!',
-              }
+              },
+              {
+                pattern: 'w*@swinfo.com.cn',
+                message: '请输入四维卓识邮箱!',
+              },
             ]}
           />
 
