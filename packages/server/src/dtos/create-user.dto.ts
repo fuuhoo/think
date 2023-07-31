@@ -17,7 +17,7 @@ export class RegisterUserDto {
   @IsEmail({ message: '请输入正确的邮箱地址' })
   @IsString({ message: '用户邮箱类型错误（正确类型为：String）' })
   @IsNotEmpty({ message: '用户邮箱不能为空' })
-  @Contains('w*@swinfo.com.cn',{ message: '只支持swinfo.com.cn邮箱' })
+  @Matches('w*@swinfo.com.cn',{ message: '只支持swinfo.com.cn邮箱' })
   email: string;
 
   @MinLength(5, { message: '邮箱验证码至少5个字符' })
