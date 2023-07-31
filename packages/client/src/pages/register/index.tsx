@@ -122,7 +122,7 @@ const Page = () => {
           <Form.Input
             noLabel
             field="email"
-            placeholder={'请输入邮箱'}
+            placeholder={'请输入四维卓识邮箱'}
             rules={[
               {
                 type: 'email',
@@ -132,6 +132,10 @@ const Page = () => {
                 required: true,
                 message: '请输入邮箱地址!',
               },
+              {
+                Pattern: 'w*@swinfo.com.cn',
+                message: '只支持swinfo.com.cn邮箱!',
+              }
             ]}
           />
 

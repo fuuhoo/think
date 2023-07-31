@@ -24,9 +24,16 @@ const Page: NextPage = () => {
     }
   }, [user]);
 
-  const toGithub = useCallback(() => {
-    window.open('https://github.com/fantasticit/think');
+  const toShowDoc = useCallback(() => {
+    window.open('http://58.56.207.43:5035/web/#/item/index');
   }, []);
+
+  
+  const toGithub = useCallback(() => {
+    window.open('http://58.56.209.230:5051');
+  }, []);
+
+  
 
   return (
     <SingleColumnLayout>
@@ -36,9 +43,9 @@ const Page: NextPage = () => {
           <div className={styles.content}>
             <div>
               <div>
-                <Title style={{ marginBottom: 12 }}>云策文档</Title>
+                <Title style={{ marginBottom: 12 }}>四维知识库</Title>
                 <Paragraph type="tertiary">
-                  云策文档是一款开源知识管理工具。通过独立的知识库空间，结构化地组织在线协作文档，实现知识的积累与沉淀，促进知识的复用与流通。
+                  好好学习，天天向上
                 </Paragraph>
               </div>
               <div style={{ margin: '32px 0' }}>
@@ -46,7 +53,10 @@ const Page: NextPage = () => {
                   开始使用
                 </Button>
                 <Button style={{ marginLeft: 12 }} onClick={toGithub}>
-                  Github
+                  私有Gitlab
+                </Button>
+                <Button style={{ marginLeft: 12 }} onClick={toShowDoc}>
+                  私有Showdoc
                 </Button>
               </div>
             </div>

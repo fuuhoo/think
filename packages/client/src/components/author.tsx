@@ -8,9 +8,9 @@ export const Author = () => {
     <div style={{ padding: '16px 0', textAlign: 'center' }}>
       <Text>
         <Space>
-          Develop by
+          {/* Develop by
           <Text link={{ href: 'https://github.com/fantasticit/think' }}>fantasticit</Text>
-          with <IconLikeHeart style={{ color: 'red' }} />
+          with <IconLikeHeart style={{ color: 'red' }} /> */}
         </Space>
       </Text>
     </div>
